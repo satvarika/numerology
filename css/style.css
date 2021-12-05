@@ -14,10 +14,10 @@
 }
 
 #matrix-table td {
-    width: 30px;
+    /*width: 30px;*/
     border: 1px solid #181818;
     background: #ebe6e3;
-    padding: 50px;
+    padding: 40px;
     font-size: 31px;
     font-weight: 100;
 }
