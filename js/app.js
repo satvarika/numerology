@@ -12,7 +12,7 @@ $(document).ready(function() {
     $('#birthday-input').mask('00/00/0000', {placeholder: "ДД/ММ/ГГГГ"})
 
     $('#culculate-btn').click(function () {
-       $('#matrix-table').addClass('display-none')
+       $('#matrix-table').addClass('display-none').removeClass('animate__bounceIn')
        $('#destiny-number').html('')
        let d = $('#birthday-input').val()
         // ВАЛИДАЦИЯ
@@ -102,7 +102,7 @@ const splitNumbers = function (number) {
 }
 
 const showMatrix = function() {
-  $('#matrix-table').removeClass('display-none')
+  $('#matrix-table').removeClass('display-none').addClass('animate__bounceIn')
     for (let i = 0; i < matrix.length; i++) {
         $(`#number-${i}`).html(matrix[i])
     }
